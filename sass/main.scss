@@ -1,0 +1,70 @@
+@import "base";
+@import "components";
+@import "layout";
+
+/*
+
+  [ Flex Box ]
+
+    Flexbox convert the container to 2 axis (x,y)
+
+      { Container Properties }
+        - display flex --> display container as flexbox.
+
+        - justify-content
+            * it deal with X-axis
+            * center --> put all element in the center of X-axis
+            * flex-start --> put all element at the beginning of X-axis
+            * flex-end --> put all element at the end of X-axis
+            * space-between --> put equal spaces between elements
+            * space-around --> put equal spaces around each element
+            * evenly --> make spaces around and between element equal
+
+        - align-items
+            * center --> put all element in the center of Y-axis
+            * flex-start --> put all element at the beginning of Y-axis
+            * flex-end --> put all element at the end of Y-axis
+            * stretch --> fit height of the elements to cover the height of the container
+            * base-line --> make bottom of the text of all element at the same line
+        
+         align-content
+            * it deal with all items of container as one item, it work with Y-axis
+
+        - flex-direction 
+            * row --> is the default value, start the row from left to right
+            * row-reverse --> start the row from right to left 
+            * column --> X will be Y , and Y will be X and all properties work as it with it's axis 
+
+        - flex-wrap
+            * wrap --> put all container's element in a single row,
+                        even if the width of elements is more than the width of the container 
+            * np-wrap --> if the width of elements is more than the width of the container
+                          so, break the element that exist from container and put it in other row
+                          
+      { items Properties }
+        - align-self
+            * it override this item and work with it alone, 
+            * it take all values of align-items but for this item.
+            * it work with Y-axis
+        
+        - order
+            * order of the flex-box start from small order to highest order 
+            * so, negative order will be the first then positive order
+
+        - flex-grow
+            * it define how much this element will take from the container 
+            * flex-grow: 2, so this width of this element will be double with of the other element
+            * flex-grow: 3,4,5...etc, default is 1  
+
+        - flex-basis
+            * we use this to to define width (in pixel or %), if there is much space
+            * if there is no enough space, so it will decrease to be as same as width of other element
+
+        - flex-shrink
+            * it work with (flex-basis),
+            * if 1, it tell browser if the element has flex basis with,
+              so shrink it if there is no enough space, if there is much space , so keep as it
+            * if 0, it tell browser if the element has flex basis with,
+              so keep as it even if there is no enough space.
+        
+*/
